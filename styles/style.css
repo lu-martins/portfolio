@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+/*variaves globais*/
+
+:root {
+
+    --main-color: #7D6E83;
+    --second-color: #D0B8A8;
+    --third-color: #DFD3C3;
+    --hover-color: #F8EDE3;
+
+    --main-font: 'Krona One', sans-serif;
+    --second-font: 'Montserrat', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    /*  width: 100%;
+    padding: 5px;
+    font-family: var(--main-font); */
+
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+
+}
+
+.header__menu {
+    display: flex;
+    gap: 30px;
+}
+
+.header__menu__link {
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    /*24px div 16 = 1.5rem - When Chrome>Settings>Appearance>Font size has changed,then the site will change too*/
+    font-weight: 600;
+    color: var(--third-color);
+    text-decoration: none;
+
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 15%;
+    gap: 82px;
+}
+
+.highlighted-title {
+    color: var(--third-color);
+
+}
+
+.presentation__content {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentation__content__title {
+    font-size: 2.25rem;
+    font-family: var(--main-font);
+    text-align: justify;
+}
+
+.presentation__content__text {
+    font-size: 1.5rem;
+    font-family: var(--second-font);
+
+}
+
+.presentation__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.presentation__links__subtittle {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.presentation__links__bt {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--second-color);
+    font-family: var(--second-font);
+    font-weight: 600px;
+    align-items: center;
+    border: 2px dotted var(--third-color);
+    /*borda dos botoes*/
+    border-radius: 8px;
+
+}
+
+/*muda a cor do botao quando coloca o mouse em cima*/
+.presentation__links__bt:hover {
+    background-color: var(--hover-color);
+}
+
+.main__img {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #ddd;
+    border-radius: 10%;
+    width: 40%;
+    height: 50%;
+    align-items: center;
+}
+
+.footer {
+    color: var(--main-color);
+    background-color: var(--third-color);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+/*mobile settings*/
+
+@media (max-width: 1200px) {
+    /* When the screen <=1200px then will apply the styles below */
+
+    .header {
+
+        padding: 10%;
+
+    }
+
+    .header__menu {
+
+        justify-content: center;
+
+    }
+
+    .presentation {
+        flex-direction: column;
+        padding: 5%;
+
+    }
+
+    .presentation__content {
+    
+        width: auto;
+    }
+
+}
