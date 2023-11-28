@@ -4,10 +4,10 @@
 
 :root {
 
-    --main-color: #7D6E83;
-    --second-color: #D0B8A8;
-    --third-color: #DFD3C3;
-    --hover-color: #F8EDE3;
+    --main-color: #000000;
+    --second-color: #F6F6F6;
+    --third-color: #22D4FD;
+    --hover-color: #272727;
 
     --main-font: 'Krona One', sans-serif;
     --second-font: 'Montserrat', sans-serif;
